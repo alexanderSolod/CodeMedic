@@ -1,7 +1,6 @@
 # CodeMedic: Automatic ICD10/CPT/Snomed code generation for clinical scenarios
-#### © 2023 Alexander Solod ℠
 
-Medical coding is an incredibly complex and time intensive task. While there have been previous attempts to create fully automated coding systems, we are still very far from the creation of a fully automated coding app. The following is a 
+Medical coding is an incredibly complex and time intensive task. While there have been previous attempts to create fully automated coding systems, we are still very far from the creation of a fully automated coding app. The following is a proof of concept for using large language models (such as GPT-3.5) as a way to automatically assign codes for clincal scenarios.  
 
 # How it works
 ## Agent methodology
@@ -11,14 +10,6 @@ The following app uses LLM agents to come up with a collection of valid codes fo
 ## Hallucination Checker
 In order to fight against LLM hallucinations, you can choose to only include codes that have been validated in an ICD-10 database. However, as of right now the hallucination check isn't perfect, and occasionally removes valid codes from the output.
 
-
-# How to use
-
-## App Usage
-- **Input**: Users can input a wide variety of clinical notes.
-- **Code Extraction**: The application uses OpenAI's GPT model's zero-short learning capability to extract 
-all possible relevant ICD-10 codes from the provided clinical notes.
-- **Output**: It display the generated ICD-10 codes instantly upon hitting ENTER or clicking on the Submit button.
 
 ## Installation
 
@@ -55,5 +46,5 @@ Run the app:
 gradio main.py
 ```
 
-**Please note that the application should be used for reference purposes only. 
-Always consult with a professional coder or practitioner when dealing with medical coding.**
+**This tool was designed as a reference to aid in medical coding tasks. Ensure each output is verified with a licensed coding specialist.**
+#### © 2023 Alexander Solod
